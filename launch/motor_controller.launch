@@ -1,0 +1,4 @@
+<launch>
+<node pkg="ros_motor_controller" name="MotorController_py_01" type="MotorController.py" launch-prefix="sudo -E PYTHONPATH=$(env PYTHONPATH)">
+</node>
+</launch>
