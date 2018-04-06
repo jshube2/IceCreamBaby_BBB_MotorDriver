@@ -41,7 +41,7 @@ class MotorController:
 		w2 = (vx + vy + (lx + ly)*wz) / scale * self.max_speed
 		w3 = (vx + vy - (lx + ly)*wz) / scale * self.max_speed
 		w4 = (vx - vy + (lx + ly)*wz) / scale * self.max_speed
-		print w1, w2, w3, w4
+		
 		self.frontLeftMotor.setState(self.sign(w1), abs(w1))
 		self.frontRightMotor.setState(self.sign(w2), abs(w2))
 		self.backLeftMotor.setState(self.sign(w3), abs(w3))
